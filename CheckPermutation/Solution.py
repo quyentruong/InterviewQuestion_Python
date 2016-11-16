@@ -1,3 +1,4 @@
+# Given two strings, write a method to decide if one is a permutation of the other.
 def check(a, b):
     # Check if two strings have same length
     if len(a) != len(b):
@@ -19,3 +20,16 @@ def check(a, b):
         if letter[ord(c)] < 0:
             return False
     return True
+
+
+# Other way to check permutation
+def sort_char(s):
+    c = list(s)
+    list.sort(c)
+    return ''.join(c)
+
+
+def check2(a, b):
+    if len(a) != len(b):
+        return False
+    return sort_char(a) == sort_char(b)
