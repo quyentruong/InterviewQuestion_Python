@@ -1,3 +1,6 @@
+# Quyen Truong
+# 11/16/2016
+
 # Given two strings, write a method to decide if one is a permutation of the other.
 def check(a, b):
     # Check if two strings have same length
